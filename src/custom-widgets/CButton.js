@@ -6,7 +6,7 @@ export default class CButton extends Component {
         const buttonText = this.props.buttonText;
         const buttonType = this.props.buttonType;
         return(
-            <button type={buttonType}>{buttonText}</button>
+            <button className="btn btn-primary" type={buttonType}>{buttonText}</button>
         );
     }
 

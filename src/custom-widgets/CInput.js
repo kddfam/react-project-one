@@ -22,15 +22,19 @@ export default class CInput extends Component {
         const inputType = this.props.inputType;
         const inputPlaceholder = this.props.inputPlaceholder;
         return(
-            <div>
-                <form onSubmit={this.handleSubmit}>
-                    <input 
-                        type={inputType} 
-                        placeholder={inputPlaceholder} 
-                        value={this.state.searchWord}
-                        onChange={this.handleChange} 
-                    />
-                    <CButton buttonText="Search" buttonType="submit" />
+            <div className="container">
+                <form onSubmit={this.handleSubmit} className="form-inline">
+                    <div className="form-group" style={{margin: "auto"}}>
+                        <input 
+                            style={{marginRight: "25px"}}
+                            className="form-control"
+                            type={inputType} 
+                            placeholder={inputPlaceholder} 
+                            value={this.state.searchWord}
+                            onChange={this.handleChange} 
+                        />
+                        <CButton buttonText="Search" buttonType="submit" />
+                    </div>
                 </form>
             </div>
         );
