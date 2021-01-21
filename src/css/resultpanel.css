@@ -1,0 +1,18 @@
+.panel-container {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.image {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+img {
+    width: 200px;
+    height: 200px;
+    margin: 15px 3px;
+    flex: 1;
+}

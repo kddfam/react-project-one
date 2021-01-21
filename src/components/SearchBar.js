@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CInput from '../custom-widgets/CInput';
+import CInput from '../widgets/CInput';
 
 export default class SearchBar extends Component {
 
